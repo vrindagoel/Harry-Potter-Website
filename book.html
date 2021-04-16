@@ -1,0 +1,153 @@
+<html>
+<head>
+<link rel=stylesheet href=NavigationBar.css>
+<style>
+.contain {
+    position: relative;
+    width: 250px;
+	display:inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.image {
+  opacity: 1;
+  display: inline-block;
+  width: 250px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.contain:hover .image {
+  opacity: 0.3;
+}
+
+.contain:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: DarkTurquoise;
+  color: white;
+  font-size: 15px;
+  padding: 16px 32px;
+  text-decoration: none;
+}
+
+</style>
+<script src="Scripting.js"></script>
+</head>
+<body face=sans-serif>
+
+<div>
+<ul>
+  <li><a href="HomePage.html">Home</a></li>
+  <li class=active><a target=Display href="book.html">Books</a></li>
+  <li><a target=Display href="film.html">Films</a></li>
+  <li><a target=Display href="magic.html">Magic</a></li>
+  <li><a target=Display href="char1.html">Characters</a></li>
+  <li style="float:right"><a target=Display onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li>
+  <li style="float:right"><a target=Display href="signup.html">Sign Up</a></li>
+  <li style="float:right"><a target=Display href="sorting.html">Sorting Hat</a></li>
+</ul>
+</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method=post action="http://localhost/Website/php3.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+<br><br>
+    <div class="container">
+      <label><b>User Name</b></label>
+      <input type="text" class="sign" placeholder="Enter Username" name="usern" required>
+
+      <label><b>Password</b></label>
+      <input type="password" class="sign" placeholder="Enter Password" name="psw" required>
+        
+      <center><input type="submit" value="Login" name="login" style="background-color: #4CAF50;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 35%;align: center; font-size:16px;"></center>
+	  <br>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<div style="padding:20px;margin-top:30px;background-color:#1C2833;color:white ;height:1500px;">
+<h1><font face=serif size=8 >Books</font></h1>
+<hr align="left" noshade color=DarkTurquoise width="1080" size="1">
+<br><br>
+<p>The <b>Harry Potter books</b> make up the popular series written by J. K. Rowling. The series spans seven books. The books have been made into movies by Warner Bros. Pictures with the last book split into two films.
+<br><br>
+The books concern a wizard called Harry Potter and his journey through Hogwarts School of Witchcraft and Wizardry. The stories tell of him overcoming dangerous obstacles to defeat the Dark wizard Lord Voldemort who killed his parents when Harry was 15 months old. The first book, Harry Potter and The Philosopher's Stone, was published in 1997 by Bloomsbury in London. The last book, Harry Potter and the Deathly Hallows, sold more than 12 million copies in the U.S.
+<br><br>
+Beginning on 6 October, 2015, the entire series was presented in a fully-illustrated format, with over 100 illustrations per title, by Jim Kay. The 7 books were also all reunited in one ebook the same year.
+<br><br>
+	
+ <a href="merch1.html" target="Display" style="text-decoration:none"><button style="width:300px; position:absolute; right:30px; height: 50px; background-color:crimson; font-size:20px; border-radius: 20px">Buy Online</button></a>
+	<br><br><br><br>
+	<center>
+	<div class="contain">
+		<a href="book1.html" style="text-decoration:none"><img src="Book1.jpg" class="image" width=250px>
+		<div class="middle">
+			<div class="text"><center><font>The Sorcerer's Stone</font></center></div>
+		</div></a>
+	</div>
+
+	<div class="contain">
+		<a href="book2.html" style="text-decoration:none"><img src="Book2.jpg" class="image" width=250px>
+		<div class="middle">
+			<div class="text"><center><font>The Chamber Of Secrets</font></center></div>
+		</div></a>
+	</div>
+
+	<div class="contain">
+		<a href="book3.html" style="text-decoration:none"><img src="Book3.jpg" class="image" width=250px>
+		<div class="middle">
+			<div class="text"><center><font>The Prisoner Of Azkaban</font></center></div>
+		</div></a>
+	</div>
+
+	<div class="contain">
+		<a href="book4.html" style="text-decoration:none"><img src="Book4.jpg" class="image" width=250px>
+		<div class="middle">
+			<div class="text"><center><font>The Goblet Of Fire</font></center></div>
+		</div></a>
+	</div>
+
+	<div class="contain">
+		<a href="book5.html" style="text-decoration:none"><img src="Book5.jpg" class="image" width=250px>
+		<div class="middle">
+			<div class="text"><center><font>Order Of Phoenix</font></center></div>
+	</div></a>
+	</div>
+
+	<div class="contain">
+		<a href="book6.html" style="text-decoration:none"><img src="Book6.jpg" class="image" width=250px>
+		<div class="middle">
+			<div class="text"><center><font>The Half Blood Prince</font></center></div>
+		</div></a>
+	</div>
+
+	<div class="contain">
+		<a href="book7.html" style="text-decoration:none"><img src="Book7.jpg" class="image" width=250px>
+		<div class="middle">
+			<div class="text"><center><font>The Deathly Hallows</font></center></div>
+		</div></a>
+	</div>
+	</center>
+ 
+ </div>
+</body>
+</html>

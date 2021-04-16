@@ -1,0 +1,94 @@
+<html>
+<head>
+<link rel=stylesheet href=NavigationBar.css>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 70%;
+    height: 200px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+<script src="Scripting.js"></script>
+</head>
+<body face=sans-serif>
+
+<div>
+<ul>
+  <li><a href="HomePage.html">Home</a></li>
+  <li class=active><a target=Display href="book.html">Books</a></li>
+  <li><a target=Display href="film.html">Films</a></li>
+  <li><a target=Display href="magic.html">Magic</a></li>
+  <li><a target=Display href="char1.html">Characters</a></li>
+  <li style="float:right"><a target=Display onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li>
+  <li style="float:right"><a target=Display href="signup.html">Sign Up</a></li>
+  <li style="float:right"><a target=Display href="sorting.html">Sorting Hat</a></li>
+</ul>
+</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method=post action="http://localhost/Website/php3.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+<br><br>
+    <div class="container">
+      <label><b>User Name</b></label>
+      <input type="text" class="sign" placeholder="Enter Username" name="usern" required>
+
+      <label><b>Password</b></label>
+      <input type="password" class="sign" placeholder="Enter Password" name="psw" required>
+        
+      <center><input type="submit" value="Login" name="login" style="background-color: #4CAF50;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 35%;align: center; font-size:16px;"></center>
+	  <br>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<div style="padding:20px;margin-top:30px;background-color:#1C2833;height:1500px;">
+
+<h1><font face=serif size=8 >Harry Potter And The Prisoner Of Azkaban</font></h1>
+<hr align="left" noshade color=DarkTurquoise width="100%" size="1">
+<br>
+
+	<div class="row">
+		<div class="column">
+		Harry Potter and the Prisoner of Azkaban is the third installment in the Harry Potter series by J. K. Rowling. It was first published in 1999.<br><br><br>
+		<h2><font face=serif >Book Description</font></h2>
+		<hr align="left" noshade color=DarkTurquoise width="100%" height=1px>
+		<br><br>
+Harry Potter is lucky to reach the age of thirteen, since he has already survived the murderous attacks of the feared Dark Lord on more than one occasion. But his hopes for a quiet term concentrating on Quidditch are dashed when a maniacal mass-murderer escapes from Azkaban, pursued by the soul-sucking Dementors who guard the prison. It's assumed that Hogwarts is the safest place for Harry to be. But is it a coincidence that he can feel eyes watching him in the dark, and should he be taking Professor Trelawney's ghoulish predictions seriously?<br><br><br>
+		</div>
+		<div class="column">
+			<div class="card">
+				<img src="Book3.jpg" alt="Ginny Weasley" style="width:100%">
+			</div>
+		</div>
+	</div>
+ 
+ <h2><font face=serif >Plot</font></h2>
+<hr align="left" noshade color=DarkTurquoise width="100%" height=1px>
+<br><br>
+Harry Potter is having a tough time with his relatives (yet again). He runs away after using magic to inflate Uncle Vernon's sister Marge who was being offensive towards Harry's parents. Initially scared for using magic outside the school, he is pleasantly surprised that he won't be penalized after all. However, he soon learns that a dangerous criminal and Voldemort's trusted aide Sirius Black has escaped from the Azkaban prison and wants to kill Harry to avenge the Dark Lord. To worsen the conditions for Harry, vile creatures called Dementors are appointed to guard the school gates and inexplicably happen to have the most horrible effect on him. Little does Harry know that by the end of this year, many holes in his past (whatever he knows of it) will be filled up and he will have a clearer vision of what the future has in store...<br><br><br>
+
+</div>
+</body>
+</html> 
