@@ -1,0 +1,86 @@
+<html>
+<head>
+<link rel=stylesheet href=NavigationBar.css>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 70%;
+    height: 350px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+<script src="Scripting.js"></script>
+</head>
+<body face=sans-serif>
+
+<div>
+<ul>
+  <li><a href="HomePage.html">Home</a></li>
+  <li><a target=Display href="book.html">Books</a></li>
+  <li class=active><a target=Display href="film.html">Films</a></li>
+  <li><a target=Display href="magic.html">Magic</a></li>
+  <li><a target=Display href="char1.html">Characters</a></li>
+  <li style="float:right"><a target=Display onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li>
+  <li style="float:right"><a target=Display href="signup.html">Sign Up</a></li>
+  <li style="float:right"><a target=Display href="sorting.html">Sorting Hat</a></li>
+</ul>
+</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method=post action="http://localhost/Website/php3.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+<br><br>
+    <div class="container">
+      <label><b>User Name</b></label>
+      <input type="text" class="sign" placeholder="Enter Username" name="usern" required>
+
+      <label><b>Password</b></label>
+      <input type="password" class="sign" placeholder="Enter Password" name="psw" required>
+        
+      <center><input type="submit" value="Login" name="login" style="background-color: #4CAF50;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 35%;align: center; font-size:16px;"></center>
+	  <br>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<div style="padding:20px;margin-top:30px;background-color:#1C2833;height:1500px;">
+
+<h1><font face=serif size=8 >Harry Potter And The Deathly Hallows Part II</font></h1>
+<hr align="left" noshade color=DarkTurquoise width="100%" size="1">
+<br>
+
+	<div class="row">
+		<div class="column">
+		Harry Potter and the Deathly Hallows: Part 2 is the second instalment of a two-part film based on Harry Potter and the Deathly Hallows by J. K. Rowling.<br><Br>
+		In the wake of the success of the 3-D film Avatar in late 2009, Warner Bros. announced that the Deathly Hallows films will be converted to 3-D for showing in 3-D.[16] However, the first film was not released in 3-D due to time constraints. The second film is nonetheless being widely released in traditional 2-D as well for ticket-buyers who prefer that viewing option.<bR><br>Deathly Hallows: Part 2 opened to critical acclaim along with instant commercial success: on the film review aggregator Rotten Tomatoes, the film has an overall approval rating of 96%. The film set many new box office records, including biggest opening day in the United States ($91,071,119), in the United Kingdom ($14.8 million) and in 13 other countries,[17] biggest US and worldwide opening weekend ($169,189,427; $483,189,427) and biggest US midnight release ($43,500,000).<br><br>
+		Deathly Hallows: Part 2 is the highest-grossing film of 2011, the 9th film in history to have grossed over $1 billion, and as of September 26, 2011, the 3rd highest-grossing film of all time, with $1,328,111,219.<br><br><br>
+		</div>
+		<div class="column">
+			<div class="card">
+				<img src="Film8.jpg" style="width:100%">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html> 
