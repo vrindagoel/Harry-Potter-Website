@@ -1,0 +1,106 @@
+<html>
+<head>
+<link rel=stylesheet href=NavigationBar.css>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 70%;
+    height: 330px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+<script src="Scripting.js"></script>
+</head>
+<body face=sans-serif>
+
+<div>
+<ul>
+  <li><a href="HomePage.html">Home</a></li>
+  <li><a target=Display href="book.html">Books</a></li>
+  <li><a target=Display href="film.html">Films</a></li>
+  <li class=active><a target=Display href="magic.html">Magic</a></li>
+  <li><a target=Display href="char1.html">Characters</a></li>
+  <li style="float:right"><a target=Display onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li>
+  <li style="float:right"><a target=Display href="signup.html">Sign Up</a></li>
+  <li style="float:right"><a target=Display href="sorting.html">Sorting Hat</a></li>
+</ul>
+</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method=post action="http://localhost/Website/php3.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+<br><br>
+    <div class="container">
+      <label><b>User Name</b></label>
+      <input type="text" class="sign" placeholder="Enter Username" name="usern" required>
+
+      <label><b>Password</b></label>
+      <input type="password" class="sign" placeholder="Enter Password" name="psw" required>
+        
+      <center><input type="submit" value="Login" name="login" style="background-color: #4CAF50;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 35%;align: center; font-size:16px;"></center>
+	  <br>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<div style="padding:20px;margin-top:30px;background-color:#1C2833;height:1500px;">
+
+<h1><font face=serif size=8 >Slytherin</font></h1>
+<hr align="left" noshade color=DarkTurquoise width="100%" size="1">
+<br>
+
+	<div class="row">
+		<div class="column">
+			<p style="margin-left: 50px; margin-right:50px; color:grey">"Or perhaps in Slytherin,<br>You'll make your real friends,<br>Those cunning folk use any means,<br>To achieve their ends."<br>—The Sorting Hat</p>
+			Slytherin is one of the four Houses at Hogwarts School of Witchcraft and Wizardry, founded by Salazar Slytherin. In establishing the house, Salazar instructed the Sorting Hat to pick students who had a few particular characteristics he most valued. Those characteristics include: cunning, resourcefulness, and ambition.<br><br>
+			The founder highly valued and favoured pure-blood students and the Sorting Hat admitted that it can be a factor when being Sorted. Students of any blood status can now be placed in the house. However, a muggle-born student is rare and it is currently unknown if there has ever been a Muggle-born Slytherin.<br><br>
+			The emblematic animal of the house is a snake and its colours are green and silver. There were two notable heads of the house, Horace Slughorn took the role twice (first leaving in 1981 and then taking the role again from 1997 until leaving before 2016), and Severus Snape. The patron ghost of the house is the Bloody Baron.<br><br>
+			Slytherin corresponds roughly with the element of water due to serpents being commonly associated with the sea and lochs in western European mythology, as well as serpents being physically fluid and flexible animals.[6] The colours also correspond with waters around lakes and lochs often being green, and silver being often associated with grey rain water.<br><br>
+			<h2><font face=serif >Traits</font></h2>
+			<hr align="left" noshade color=DarkTurquoise width="100%" height=1px>
+			Slytherins tend to be ambitious, shrewd, cunning, strong leaders, and achievement-oriented. They also have highly developed senses of self-preservation.[7] This means that Slytherins tend to hesitate before acting, so as to weigh all possible outcomes before deciding exactly what should be done.<br><br>
+			According to Albus Dumbledore, the qualities which Salazar valued in the students he chose included cleverness, resourcefulness, determination, and "a certain disregard for the rules." Dumbledore noted that all of these were qualities possessed by Harry Potter, who was in Gryffindor.<br><br>
+			Slytherins tend to take charge and possess strong leadership skills. Slytherins are often self-assured and confident of their own competence. Slytherins can be very loyal.<br><br>
+		</div>
+		<div class="column">
+			<div class="card">
+				<img src="House3a.png" alt="Slytherin" style="width:100%; background-color:white;">
+				<div class="container" style="background-color:green; color: white;">
+				<h4>Slytherin</h4>
+				<p><b>Founder: </b>Salazar Slytherin</p>
+				<p><b>House Colours: </b>Green And Silver</p>
+				<p><b>Animal: </b>Serpent</p>
+				<p><b>Element: </b>Water</p>
+				<p><b>Traits: </b>Resourcefulness, Cunning, Ambition, Determination, Self-Perseverance, Fraternity, Cleverness</p>
+				<p><b>Head: </b>Severus Snape</p>
+				<p><b>Ghost: </b>Bloody Baron</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<br>
+
+
+</div>
+</body>
+</html>
