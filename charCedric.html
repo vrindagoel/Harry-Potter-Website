@@ -1,0 +1,124 @@
+<html>
+<head>
+<link rel=stylesheet href=NavigationBar.css>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 70%;
+    height: 330px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+<script src="Scripting.js"></script>
+</head>
+<body face=sans-serif>
+
+<div>
+<ul>
+  <li><a href="HomePage.html">Home</a></li>
+  <li><a target=Display href="book.html">Books</a></li>
+  <li><a target=Display href="film.html">Films</a></li>
+  <li><a target=Display href="magic.html">Magic</a></li>
+  <li class=active><a target=Display href="char1.html">Characters</a></li>
+  <li style="float:right"><a target=Display onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li>
+  <li style="float:right"><a target=Display href="signup.html">Sign Up</a></li>
+  <li style="float:right"><a target=Display href="sorting.html">Sorting Hat</a></li>
+  <li style="float:right"><a target=Display href="merch.html">Merchandise</a></li>
+</ul>
+</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method=post action="http://localhost/Website/php3.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+<br><br>
+    <div class="container">
+      <label><b>User Name</b></label>
+      <input type="text" class="sign" placeholder="Enter Username" name="usern" required>
+
+      <label><b>Password</b></label>
+      <input type="password" class="sign" placeholder="Enter Password" name="psw" required>
+        
+      <center><input type="submit" value="Login" name="login" style="background-color: #4CAF50;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 35%;align: center; font-size:16px;"></center>
+	  <br>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<div style="padding:20px;margin-top:30px;background-color:#1C2833;height:1500px;">
+
+<h1><font face=serif size=8 >Cedric Diggory</font></h1>
+<hr align="left" noshade color=DarkTurquoise width="100%" size="1">
+<br>
+
+	<div class="row">
+		<div class="column">
+			<p style="margin-left: 50px; margin-right:50px; color:grey">"Remember, if the time should come, when you have to make a choice between what is right and what is easy, remember what happened to a boy who was good, and kind, and brave, because he strayed across the path of Lord Voldemort. Remember Cedric Diggory." <br>&mdash;—Albus Dumbledore's eulogy to Cedric</p><br><br>
+			Cedric Diggory (September/October, 1977 – 24 June, 1995) was the son of Amos Diggory and his wife. He started attending Hogwarts School of Witchcraft and Wizardry in 1989, and was sorted into Hufflepuff House. During his time at school he was a prefect and captained the Hufflepuff Quidditch team, playing as Seeker. In his sixth year Cedric put his name forward to compete in the Triwizard Tournament. <br><br><br>
+			He was selected as the Hogwarts Triwizard Champion and, although overshadowed in the press by the entry of Harry Potter, Cedric enjoyed almost overwhelming support from the student body, and after the first two tasks, tied with Harry for first place. Cedric and Harry completed the Third Task together. Both took hold of the Triwizard Cup, which transported them to the Little Hangleton graveyard. In the graveyard, Cedric was murdered by Peter Pettigrew with the Killing Curse, on the order of Lord Voldemort. <br><br><br>
+			During the following duel between Harry and Voldemort, Cedric's echo reappeared during Priori Incantatem, and helped the echoes of Harry's parents, Bertha Jorkins, and Frank Bryce hold off Voldemort long enough for him to escape. His only request was for Harry to take his body back to his parents, which Harry honoured. <br><br><br>
+			In 2020, Diggory's participation in the Triwizard Tournament and subsequent death was the subject of Albus Potter and Scorpius Malfoy's time-travel antics at the request of Amos. They sought to save Cedric and created an alternate timeline where Cedric survived and became part of the Death Eaters, because of the humiliation they caused him when they tried to save his life. Cedric's original and heroic life and death was later restored. <br><br><br>
+</div>
+		<div class="column">
+			<div class="card">
+				<img src="char1a.jpg" alt="Cedric Diggory" style="width:100%">
+				<div class="container" style="background-color:orange; color: white;">
+				<h4>Cedric Diggory</h4>
+				<p><b>Gender: </b>Male</p>
+				<p><b>Hair Colour: </b>Dark</p>
+				<p><b>Eye colour: </b>Grey</p>
+				<p><b>Family: </b>Amos Diggory</p>
+				<p><b>House: </b><a href=".html" style="text-decoration:none"><font color=white>Hufflepuff</font></a></p>
+				<p><b>Blood-Status: </b>Pure-Blood</p>
+				<p><b>Wand: </b>12<sup>1/4</sup>", Ash, unicorn hair</p>
+				<p><b>Title(s): </b>Quidditch Captain, Seeker, Prefect, Triwizard Champion</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<br>
+
+<h2><font face=serif >Personality And Traits</font></h2>
+<hr align="left" noshade color=DarkTurquoise width="100%" height=1px>
+<br>
+<p style="margin-left: 50px; margin-right:50px; color:grey">"We'll celebrate a boy who was, kind and honest, and brave, and true right to the very end." <br>&mdash;—Dumbledore regarding Cedric's character</p><br><br>
+Cedric was said to be an embodiment of the qualities of Hufflepuff House. He had a sense of fair play: during the 1993 Gryffindor/Hufflepuff match, despite his capture of the Golden Snitch (which ensured his team's victory), Cedric immediately offered to replay the match once he found out that his opponent, Harry Potter, had fallen from his broom due to the influence of the Dementors.[5] Later on, he provided Harry with information as to how to decipher the golden egg clue for the Second Task. After Harry saved him in the maze, Cedric realised that Harry was the one who truly deserved to take the Triwizard Cup, and had no qualms with openly acknowledging it, which actually resulted in an argument of sorts between them. This sense of fair play and his ability to accept there were those who were better than him is a definite testament to his nobility and his grace. <br><br><br>
+He also appeared to possess a strength of character that was not unlike Harry's. This came into play when Fleur's turning the force of her Veela charm on him while asking him to be her date for the Yule Ball. He refused, for he already had a date. Hence, it could be said that Cedric was a man of his word with remarkable inner strength, especially given how he was able to successfully resist the allure of Veela charm (which could be overwhelming) and keep his previously made promise.<br><br><br> 
+Besides all this, Cedric was genuinely modest, telling his father that his victory in the Gryffindor/Hufflepuff Quidditch match had not been a truly fair one. All the female Gryffindor Chasers described him as being "strong and silent", suggesting that he was sensible enough to speak only when it was absolutely necessary. He was also courteously polite to foreigners: though he supported Ireland during the 1994 Quidditch World Cup final, he was still civil to Viktor Krum (who was from Bulgaria). The fact that his spirit's last request to Harry had only been to take his body back to his parents also proved that he loved his parents dearly. <br><br><br>
+While this side of him was never seen in the original timeline, he appeared to have a sense of honour and importance for his title at the school. This was proved by the fact that in one of the alternate timelines, in which he was humiliated during the Triwizard Tournament, this feeling of embarrassment eventually led him to join the Death Eaters. This means that if his pride or status was to ever been shot down enough, this feeling of anger would have turned him over to the Death Eaters.<br><br><br>
+
+<h2><font face=serif>Magical Abilities And Skills</font></h2>
+<hr align="left" noshade color=DarkTurquoise width="100%" height=1px>
+<br>
+<p style="margin-left: 50px; margin-right:50px; color:grey">"By the time he was your age, he could turn a whistle into a watch and have it sing you the time." <br>&mdash;—Bartemius Crouch Jr (disguised as Alastor Moody) on Cedric's skills</p> 
+<br><br>
+Given how Cedric was chosen and subsequently acknowledged to be more than capable of participating in the Triwizard Tournament, it can be deduced that he was a skilful and competent wizard in his own right, with even Barty Crouch Jr acknowledging him as a talented wizard.[3] He was also an accomplished Quidditch player. <br><br><br>
+<ol>
+<li><b>Quidditch:</b> As the Captain and Seeker of the Hufflepuff Quidditch team, Cedric was a skilful flyer and Quidditch player, especially since the position of Seeker was generally considered to be the hardest position to play. In particular, he was noted to have a very fast swerve.[5] He even defeated Harry Potter once, although this had been due to the presence of Dementors causing Harry to fall off his broom. <br><br><br>
+<li><b>Transfiguration:</b> Cedric was shown to be skilled in Transfiguration, given how he transformed a rock into a dog during the first task of the Tournament, and apparently took the subject at N.E.W.T.-level.[3] <br><br><br>
+<li><b>Charms:</b> Cedric was shown to be skilled in Charms, using a successful Bubble-Head Charm during the second task of the Tournament, and took the subject at N.E.W.T.-level.[3] <br><br><br>
+<li><b>Defence Against the Dark Arts:</b> Cedric was skilled in spells taught in Defence against the Dark Arts.[9] <br><br><br>
+<li><b>Strong Will:</b> Cedric was shown to possess an exceptionally strong willpower that could rival that of Harry's, and was able to accept defeat with a good grace. For instance, he was able to successfully resist Fleur's Veela charm and honour his previous arrangement with Cho, which was no easy feat as Veela charm could be particularly powerful, and Fleur seemed to be turning on the full force of it upon him. Later on, though it obviously cost him every ounce of resolution to do so, Cedric was willing to acknowledge Harry as the true winner by offering him the Triwizard Cup, despite the fact that it meant forgoing the glory that he - and by extension, his House - had fought so hard for. <br><br><br>
+</ol>
+</div>
+</body>
+</html>

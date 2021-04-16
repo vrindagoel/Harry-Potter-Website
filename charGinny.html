@@ -1,0 +1,164 @@
+<html>
+<head>
+<link rel=stylesheet href=NavigationBar.css>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 70%;
+    height: 480px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+<script src="Scripting.js"></script>
+</head>
+<body face=sans-serif>
+
+<div>
+<ul>
+  <li><a href="HomePage.html">Home</a></li>
+  <li><a target=Display href="book.html">Books</a></li>
+  <li><a target=Display href="film.html">Films</a></li>
+  <li><a target=Display href="magic.html">Magic</a></li>
+  <li class=active><a target=Display href="char1.html">Characters</a></li>
+  <li style="float:right"><a target=Display onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li>
+  <li style="float:right"><a target=Display href="signup.html">Sign Up</a></li>
+  <li style="float:right"><a target=Display href="sorting.html">Sorting Hat</a></li>
+</ul>
+</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method=post action="http://localhost/Website/php3.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+<br><br>
+    <div class="container">
+      <label><b>User Name</b></label>
+      <input type="text" class="sign" placeholder="Enter Username" name="usern" required>
+
+      <label><b>Password</b></label>
+      <input type="password" class="sign" placeholder="Enter Password" name="psw" required>
+        
+      <center><input type="submit" value="Login" name="login" style="background-color: #4CAF50;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 35%;align: center; font-size:16px;"></center>
+	  <br>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<div style="padding:20px;margin-top:30px;background-color:#1C2833;height:1500px;">
+
+<h1><font face=serif size=8 >Ginny Weasley</font></h1>
+<hr align="left" noshade color=DarkTurquoise width="100%" size="1">
+<br>
+
+	<div class="row">
+		<div class="column">
+			Ginevra[12] Molly[23] "Ginny" Potter[24] (neé Weasley) (b. 11 August, 1981[1]), occasionally known as Gin[25], was a pure-blood[3] witch, the youngest of Arthur and Molly Weasley's (née Prewett) seven children, and the first female to be born into the Weasley line for several generations. She and her older brothers grew up in the Burrow on the outskirts of Ottery St Catchpole in Devon.<br><br><br> 
+			Ginny attended Hogwarts School of Witchcraft and Wizardry from 1992-1999 and was sorted into Gryffindor House. During her first year she developed a long standing crush on Harry Potter. Also during her first year, she came under the influence of the memory of Tom Riddle's sixteen-year-old self. The memory was preserved in a diary, which forced Ginny to re-open the Chamber of Secrets, endangering the lives of many students, including herself.<br><br><br> 
+			Following that ordeal Ginny grew into a confident young woman, becoming an important member of Dumbledore's Army, an organisation taught and led by Harry Potter in her fourth year. She would later fight in the Battle of the Department of Mysteries (1996), the Battle of the Astronomy Tower (1997), and the Battle of Hogwarts (1998). She was also an accomplished Quidditch player, playing Chaser and Seeker at different times for the Gryffindor Quidditch team.<br><br><br> 
+			After the Second Wizarding War Ginny became a professional Quidditch player for the Holyhead Harpies. Upon retiring from the Harpies Ginny became the senior Quidditch correspondent for the Daily Prophet. She eventually married Harry Potter and the couple had three children; James Sirius (named after Harry's father and godfather), Albus Severus (named after Albus Dumbledore and Severus Snape), and Lily Luna Potter (named after Harry's mother and Luna Lovegood).
+			By 2020 Ginny became the sports editor for the Daily Prophet.<br><br><br>
+
+</div>
+		<div class="column">
+			<div class="card">
+				<img src="char1g.jpg" alt="Ginny Weasley" style="width:100%">
+				<div class="container" style="background-color:#ff471a; color: white;">
+				<h4>Ginny Weasley</h4>
+				<p><b>Gender: </b>Female</p>
+				<p><b>Hair Colour: </b>Red</p>
+				<p><b>Eye colour: </b>Bright Brown</p>
+				<p><b>Family:</b>Arthur Weasley, Molly Weasley</p>
+				<p><b>Spouse:</b><a href=".html" style="text-decoration:none"><font color=white>Harry Potter</font></a></p>
+				<p><b>House:</b><a href="House1.html" style="text-decoration:none"><font color=white>Gryffindor</font></a></p>
+				<p><b>Patronus:</b>Horse</p>
+				<p><b>Blood-Status:</b>Pure-Blood</p>
+				<p><b>Wand:</b>Unknown length,Yew, unknown core</p>
+				<p><b>Title(s): </b>Chaser,Seeker</p>
+				<p><b>Occupation: </b>Chaser for the Holyhead Harpies(formerly),Senior Quidditch reporter for the Daily Prophet[21] (formerly),Sports editor for the Daily Prophet</p>
+				</div>
+			</div>
+		</div>
+	</div>
+ <h2><font face=serif >Personality And Traits</font></h2>
+<hr align="left" noshade color=DarkTurquoise width="100%" height=1px>
+<br><br>
+<p style="margin-left: 50px; margin-right:50px; color:grey"> "You don't know how weird it is for her to be this shy, she never shuts up normally —" <br>&mdash;—Ron Weasley regarding his sister's personality"</p>
+Ginny was a forceful, independent girl who often knew her own mind. She had an energetic, lively personality; having feelings for Harry, however, during the first few years of their friendship, she became shy and withdrawn in his presence.[10][14] On the advice of mutual friend Hermione Granger, she overcame it. She relaxed and reasserted her usual self, which was when Harry finally started noticing her.[12][22] One of the traits Harry was attracted to was that Ginny rarely got weepy;[12] this contrasted with Cho Chang, who started to cry all throughout the 1995-1996 school year after her boyfriend was murdered. Ginny also had a knack for imitating the mannerisms of others very accurately, much to the amusement of those around her, as she managed to mimic Dolores Umbridge's signature fake cough. <br><br><br>
+Growing up with six older brothers toughened her up. Ginny was not afraid to stand up to anybody, friends and enemies alike. Notably, she stood up to Draco Malfoy on their first meeting in Flourish and Blotts when he insulted Harry in 1992.[10] She even stood up to Hermione, her close friend in defence of Harry's use of the Sectumsempra curse.[22] Also, she could be harsh towards those whom she disliked. For instance, she made fun of Fleur Delacour behind her back when she first became engaged to Bill. Ginny also hexed and crashed into Zacharias Smith when he irritated and insulted her on two separate occasions during her fifth year.<br><br><br>
+<p style="margin-left: 50px; margin-right:50px; color:grey"><b>Draco Malfoy:</b> "Bet you loved that, didn't you, Potter? Famous Harry Potter. Can't even go in to a bookshop without making the front page." 
+<br><b>Ginny:</b> "Leave him alone, he didn't want all that!" <br>&mdash;— Ginny defending Harry against school bully Draco Malfoy</p>
+Ginny was popular during their time at Hogwarts, and was fancied by numerous boys. Her brothers: Fred, George, and Ron, often thought that she was too popular for her own good. She was also known to be quick-witted, funny, and could often make others laugh even when they were feeling down.[13][22] Ginny was also good at lying and capable of being opaque when necessary. While staying at 12 Grimmauld Place, she was taught by Nymphadora Tonks how to check if a door had been imperturbed by flicking dungbombs at it and watching them bounce away as if hitting an invisible wall. When asked by her mother who was responsible, she blamed it on Crookshanks, even though her hands were filthy at the time.[13] During the first meeting of what would become the D.A. in the Hog's Head, she coughed exactly like Professor Umbridge, scaring those gathered into believing the real Umbridge had caught them.[13] Her acting talents were put to good use later when Harry and Hermione broke into Umbridge's office to contact Sirius Black through the fireplace. She convinced passing students that the corridor to Umbridge's office had been flooded with garroting gas.[13] <br><br><br>
+Ginny was also an animal lover, and was known to be fond of cats. When Mrs Norris was petrified in her first year at Hogwarts, her brothers put her shock down to this fact, not knowing that Ginny was scared because she could not remember what she was doing at the time and feared that she was responsible.[10] She named Ron's owl "Pigwidgeon",[26] and was known to be able to lure Crookshanks out of hiding to play with her when she wanted.[13] In her fifth year, she finally got her own pet, a purple Pygmy Puff from Weasleys' Wizard Wheezes that she named Arnold.<br><br><br> 
+
+Ginny was notably difficult to intimidate or frighten, as seen during her moments of standing up to Harry during his moments of rage and anger. This is particularly impressive given that Harry's rages were capable of terrifying even his best friends Ron and Hermione, who were both incredibly courageous individuals. Ginny's courage also enabled her to take part in a three-way duel in the Battle of Hogwarts alongside Luna and Hermione against the powerful and insane Bellatrix Lestrange.<br><br><br> 
+<h2><font face=serif>Magical Abilities And Skills</font></h2>
+<hr align="left" noshade color=DarkTurquoise width="100%" height=1px>
+<br><br>
+<p style="margin-left: 50px; margin-right:50px; color:grey">"Come on, Ginny's not bad. Actually, I dunno how she got so good, seeing how we never let her play with us" 
+<br>&mdash;—Ginny's impressive Quidditch skills</p>
+Ginny was a very talented and powerful witch. At the age of fourteen she was able to conjure a corporeal Patronus — a very advanced piece of magic and proof that she possessed superior magical ability.[24] She was also a gifted flier and Quidditch player. <br><br><br>
+<ol>
+<li><b>Charms:</b> Ginny was proficient in this area of magic. She was able to cast the very advanced Patronus Charm, which took the corporeal form of a horse.[20] She once used a single Scouring Charm in 1995 to clean all the Stinksap out of a compartment on the Hogwarts Express. 
+<br><br><br>
+<li><b>Dark Magic:</b> Ginny is at least moderately skilled in Dark magic. In particular the Bat-Bogey Hex, which she was noted to be quite adept in from a fairly young age. She was able to cast the hex so efficiently that she gained the notice of Professor Slughorn, who invited her to join the Slug Club, entirely because she performed a "marvellous Bat-Bogey Hex".[22] Ginny has also been shown to be capable of casting a powerful and impressive Reductor Curse. 
+<br><br><br>
+<li><b>Duelling:</b> Ginny was a talented duellist. She survived the Battle of the Department of Mysteries with only a minor injury.[13] She also fought Death Eaters again during the Battle of the Astronomy Tower and emerged unscathed. This was partly due to the use of Felix Felicis and partly due to her agility and reflexes (she had an uncanny ability for dodging her opponents' curses).[22] During the Battle of Hogwarts she fired well-aimed curses into the crowd of attacking Death Eaters. She, Hermione, and Luna also held their own against Bellatrix Lestrange, an extremely powerful witch.[12] Ginny was especially skilled in the Reductor Curse. 
+<br><br><br>
+<li><b>Flying:</b> Ginny eventually became an accomplished flier and played both Chaser and Seeker for the Gryffindor Quidditch team. Despite not playing Seeker regularly, she was able to defeat Cho Chang, a seasoned Seeker. She even effectively stepped into the shoes of the extremely talented Harry Potter (though it was stated that she had nothing on Harry), winning Gryffindor the Quidditch Cup in 1996.[22] As an adult, she became a professional Quidditch player for the Holyhead Harpies.[21] 
+<br><br><br>
+<li><b>Agility:</b> Ginny is small and fast making her adept at dodging spells and flying to catch the Golden Snitch at Quidditch matches. 
+<br><br><br>
+<li><b>Leadership skills:</b> At the young age of sixteen, Ginny was able to effectively co-lead Dumbledore's Army alongside Luna Lovegood and Neville Longbottom. 
+<br><br><br>
+<li><b>Journalism:</b> As the Head Quidditch Correspondent for the Daily Prophet following her retirement from professional Quidditch, Ginny has been shown in her articles to be a very fair and adept journalist and reporter, often composing very unbiased and accurate articles while still injecting a certain enthusiasm into her writing style. Her position as the head of this section of the Prophet shows her level of skill and talent as a journalist, as well as her level of responsibility while still remaining a celebrated reporter.
+<br><br><br>
+</ol>
+<br><br><br>
+
+<h2><font face=serif>Possesions</font></h2>
+<hr align="left" noshade color=DarkTurquoise width="100%" height=1px>
+<br><br>
+<ol>
+<li><b>Wand:</b> Ginny's wand is made from yew, with an unknown length and core. Like most wizards and witches, she purchased it at Ollivanders before beginning her education at Hogwarts in 1992. 
+<br><br><br>
+<li><b>Bedroom: </b>Ginny's bedroom is where she used to sleep at The Burrow before marrying Harry Potter. It is located on the first floor landing. 
+<br><br><br>
+<li><b>Weasley jumper:</b> As a member of the Weasley family she owned several Weasley Jumpers. They are made by Molly Weasley for family and friends and sent as Christmas gifts. 
+<br><br><br>
+<li><b>Dress robes:</b> Ginny wore dress robes to the Yule Ball in 1994. She was accompanied to the ball by Neville Longbottom. 
+<br><br><br>
+<li><b>Dress robes:</b> These were the dress robes worn by Ginny to the Slug Club Christmas party on 20 December, 1996. 
+<br><br><br>
+<li><b>Arnold:</b> Ginny's Pygmy Puff, or miniature Puffskein, purchased from her brothers Fred and George Weasley at their shop, Weasley's Wizard Wheezes, in August of 1996. 
+<br><br><br>
+<li><b>Bridesmaid's dress:</b> This was the dress Ginny wore to Bill and Fleur's wedding. She was a bridesmaid along with Fleur's younger sister Gabrielle. 
+<br><br><br>
+<li><b>T. M. Riddle's Diary:</b> Tom Riddle's diary was in Ginny's possession before Harry Potter destroyed in the Chamber of Secrets on 29 May, 1993. The memory that resided in the diary had begun possessing and slowly draining the life out of Ginny. 
+<br><br><br>
+<li><b>Dumbledore's Army coin:</b> Each member of the D.A. had a coin that had numerals that changed into the time and date of the next meeting of the D.A. whenever the master coin (owned by Harry Potter) was changed. The coin would also warm up to alert the holder to the change. 
+<br><br><br>
+<li><b>Broomstick:</b> Ginny had an unknown broom which she used for Quidditch as Chaser or Seeker.
+<br><br><br>
+</ol>
+</div>
+</body>
+</html> 

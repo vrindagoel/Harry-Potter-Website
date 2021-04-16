@@ -1,0 +1,126 @@
+<html>
+<head>
+<link rel=stylesheet href=NavigationBar.css>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 70%;
+    height: 550px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+<script src="Scripting.js"></script>
+</head>
+<body face=sans-serif>
+
+<div>
+<ul>
+  <li><a href="HomePage.html">Home</a></li>
+  <li><a target=Display href="book.html">Books</a></li>
+  <li><a target=Display href="film.html">Films</a></li>
+  <li><a target=Display href="magic.html">Magic</a></li>
+  <li class=active><a target=Display href="char1.html">Characters</a></li>
+  <li style="float:right"><a target=Display onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li>
+  <li style="float:right"><a target=Display href="signup.html">Sign Up</a></li>
+  <li style="float:right"><a target=Display href="sorting.html">Sorting Hat</a></li>
+</ul>
+</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method=post action="http://localhost/Website/php3.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+<br><br>
+    <div class="container">
+      <label><b>User Name</b></label>
+      <input type="text" class="sign" placeholder="Enter Username" name="usern" required>
+
+      <label><b>Password</b></label>
+      <input type="password" class="sign" placeholder="Enter Password" name="psw" required>
+        
+      <center><input type="submit" value="Login" name="login" style="background-color: #4CAF50;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 35%;align: center; font-size:16px;"></center>
+	  <br>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<div style="padding:20px;margin-top:30px;background-color:#1C2833;height:1500px;">
+
+<h1><font face=serif size=7 >Hermione Granger</font></h1>
+<hr align="left" noshade color=DarkTurquoise width="100%" size="1">
+<br>
+
+	<div class="row">
+		<div class="column">
+			<p style="margin-left: 50px; margin-right:50px; color:grey"><b>Harry Potter:</b> "But why's she got to go to the library?"<br><b>Ronald Weasley:</b> "Because that's what Hermione does. When in doubt, go to the library."<br>&mdash; Hermione's book dependency</p>
+			Minister Hermione Jean[19] Granger (b. 19 September, 1979[1]) was a Muggle-born[20] witch born to Mr and Mrs Granger, both dentists. Hermione was raised as a Muggle girl until, at age eleven, when she learned that she was a witch and had been accepted into Hogwarts School of Witchcraft and Wizardry. She began attending the school on 1 September, 1991, where she was subsequently sorted into Gryffindor House, despite being considered for Ravenclaw. She possessed a brilliant academic mind, and proved to be a gifted student in almost every subject that she studied. She was very studious and bookish.<br><br><br>
+			Hermione first met Harry Potter and Ron Weasley aboard the Hogwarts Express. Both boys found Hermione unfriendly and somewhat of an insufferable know-it-all. Later, her eagerness to please her professors and her constant correct answers reinforced their initial impression. However, in spite of the cool relationship between the three, Hermione stepped in to take the blame from Ron and Harry after they had saved her from a troll on Hallowe'en in 1991. Harry and Ron were surprised, but grateful and the three quickly became friends.<br><br><br>
+			In her second year, Hermione played a crucial role in the discovery of the Chamber of Secrets, before falling victim to the basilisk unleashed upon Hogwarts following the opening of the Chamber. She was recovered from her petrification under the care of Madam Pomfrey with the assistance of Professor Sprout's Mandrake Restorative Draught. The next year, Hermione was granted permission to use, and was sent, a Time-Turner from the Ministry of Magic to facilitate her volition to study far more subjects than was possible without time travel. Later in the year, she and Harry would use the Time-Turner to rescue Sirius Black from the Dementor's Kiss as well as Buckbeak the hippogriff from execution. During her fourth year at Hogwarts, Hermione became an advocate for the better treatment of house-elves, forming the association S.P.E.W. She also helped Harry prepare for the Triwizard Tournament. In her fifth year, she was the driving force behind the creation of Dumbledore's Army. Later in her fifth year, she fought alongside Harry Potter, Ron Weasley, Ginny Weasley, Luna Lovegood, and Neville Longbottom in the Battle of the Department of Mysteries. In her sixth year, she fought in the Battle of the Astronomy Tower and, at the beginning of what would have been her seventh year, the Battle of the Seven Potters in 1997.<br><br><br>
+			Hermione and Ron both decided not to return to Hogwarts for their final year of studies and instead chose to accompany Harry on his quest to find and destroy Lord Voldemort's Horcruxes. She then fought in, and survived, the Battle of Hogwarts, as well as destroying Hufflepuff's Cup, a Horcrux with Ron Weasley, using a basilisk fang found in the Chamber of Secrets (then opened by Ron imitating Harry saying "open" in Parseltongue).<br><br><br>
+			Following the Second Wizarding War, Hermione went back to Hogwarts to complete her education. She later found employment with the Ministry of Magic, furthering the cause for the better treatment of house-elves, before being promoted to the Department of Magical Law Enforcement. She eventually married Ron Weasley, and together they had two children, Rose and Hugo. Hermione became the godmother of Harry and Ginny Potter's eldest son James. By the year 2019 she was the elected Minister for Magic.<br><br><br>
+		</div>
+		<div class="column">
+			<div class="card">
+				<img src="char1i.jpg" alt="Hermione Granger" style="width:100%">
+				<div class="container" style="background-color:#ff471a ; color: white;">
+				<h4>Hermione Granger</h4>
+				<p><b>Gender: </b>Female</p>
+				<p><b>Height: </b>5'5</p>
+				<p><b>Hair Colour: </b>Brown</p>
+				<p><b>Eye colour: </b>Brown and yellow(briefley)</p>
+				<p><b>Played By: </b><a href="Emma.html" style="text-decoration:none"><font color=white>Emma Watson</font></a></p>
+				<p><b>Family: </b>Mr. Granger, Mrs, Granger</p>
+				<p><b>Spouse: </b><a href=".html" style="text-decoration:none"><font color=white>Ron Weasley</font></a></p>
+				<p><b>House: </b><a href=".html" style="text-decoration:none"><font color=white>Gryffindor</font></a></p>
+				<p><b>Blood-Status: </b>Muggle-Born</p>
+				<p><b>Wand: </b>10<sup>3/4</sup>'', vinewood, dragon heartstring, 12<sup>3/4</sup>'', walnut, dragon heartstring</p>
+				<p><b>Patronus: </b>Otter</p>
+				<p><b>Boggart: </b>Failure</p>
+				<p><b>Title(s): </b>Prefect, Deputy Head of the Department of Magical Law Enforcement, Leader of S.P.E.W., Minister of Magic</p>
+				<p><b>Occupation: </b>Minister of Magic</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<h2><font face=serif >Physical Appearance</font></h2>
+<hr align="left" noshade color=DarkTurquoise width="100%" height=1px>
+<br><br>
+Hermione had lots of bushy brown hair, brown eyes, a bossy sort of voice that would become slightly shrill when she was angry,[23] and — as a child — rather large front teeth.<br><br><br>
+Hermione never gave much attention to her appearance, and usually hid her potential to be extremely pretty under her bushy hairstyle and a large pile of books, which she kept slung on her back.[22] She generally wore her school uniform under her robes. Otherwise, she dressed casually.<br><br><br>
+However, in 1994, Hermione had Madam Pomfrey magically shrink her front teeth after she was accidentally struck with a Densaugeo spell, making it unnecessary for her to receive the braces her parents had originally intended for her. She also used Sleekeazy's Hair Potion to fix her hair, though she later remarked that it was too much work to use everyday. It was eventually revealed that these efforts were to help her look her very best for the Yule Ball.<br><br><br>
+During the Yule Ball, many of Hermione's fellow students were stunned by how pretty she looked. Harry himself failed to recognise her initially, and was shocked when he did, for she did not look at all like her usual self: her hair was sleek and shiny, and twisted up into an elegant knot at the back of her head. She wore robes made of a floaty, periwinkle-blue material, and she smiled and held herself differently. Even Pansy gaped at Hermione when she saw her, and Draco seemed unable to find an insult to throw at her.<br><br><br>
+During the wedding of Bill and Fleur, Hermione again put in effort to look her best: her hair was sleek and shiny, and she wore a floaty, lilac-coloured dress with matching high heels.<br><br><br>
+However, Hermione usually kept her hair long (it was once described as a "long mane of brown hair"), and sometimes tied it back in a plait.[6]<br><br><br>
+
+<h2><font face=serif >Personality And Traits</font></h2>
+<hr align="left" noshade color=DarkTurquoise width="100%" height=1px>
+<p style="margin-left: 50px; margin-right:50px; color:grey">Horace Slughorn: "Oho! 'One of my best friends is Muggle-born, and she's the best in our year!' I'm assuming this is the very friend of whom you spoke, Harry?"<br>Harry Potter: "Yes, sir."<br>Horace Slughorn: "Well, well, take 20 well-earned points for Gryffindor, Miss Granger."<br>&mdash; After Hermione impresses Slughorn with her potion knowledge</p>
+Hermione was noted for being extremely intelligent and hard-working, coming out on top in most of her classes and continuously aiding Harry and Ron in their adventures. She was so studious that the school gave her a Time-Turner in her third year, a device that rewinds time so that she could take extra courses.[15] Because of her efficiency, she often had time to do hobby work on the side, such as preparing a defence for Buckbeak to save him from execution, and creating S.P.E.W., an organisation promoting the freedom of house-elves.[24] Such acts demonstrate Hermione's social conscience, tenacity, and compassion. Unlike most wizards who depended solely on their magical ability, Hermione readily relied on logic. Although this often helped her cleverly deduce information that many others missed, such as Remus Lupin's lycanthropy,[15] Hermione's emphasis on logic also made her sceptical about accepting anything without proof, as opposed to Harry who would come to intuitive conclusions. For example, she completely dismissed the idea of the Deathly Hallows, refusing to believe in them without physical evidence.<br><br><br>
+Hermione was quite responsible, perfectionistic, and well put-together, which led to her being made a prefect during her fifth year. Throughout her entire school career, Hermione was insistent on order and steadfastly devoted to the rules, at the expense of her popularity. Her sense of humour was limited; she frequently expressed disapproval over Fred and George's practical jokes and threatened to put them in detention for selling prank items in the common room. She often attempted to act as the voice of reason among her more impulsive friends, to varying levels of success. <br><br><br>
+However, in spite of her strait-laced disposition, Hermione was not above using coercion and threats to get what she wanted, as is evidenced by her blackmailing Rita Skeeter into writing a good article about Harry.[23] Hermione was not afraid to stand up to her friends when she thought it was in their best interests, or when she felt they were wrong; she risked angering Harry by getting his Firebolt confiscated because she feared it might be jinxed,[15] and argued with both him and Ginny over his use of the shady Half Blood Prince's textbook.[25] Hermione was very determined and focused, in that she "always [kept] her attention focused on the job that must be done."[30] Her refusal to break under torture shows her strength of willpower.<br><br><bR>
+Because of her opinionated, interfering nature, Hermione had the reputation for being a bossy know-it-all. Her sometimes abrasive attitude masked deep insecurities and fear of failure, as personified by her Boggart.[31] Hermione felt the need to prove herself, perhaps partly because of how many people in wizarding society looked down on Muggle-borns. She did not let anyone bully her about this, however, and ignored bigots like Draco Malfoy. In her fifth year, she also became one of the few people to call Voldemort by name.[22] Despite her confidence in her abilities, she was not arrogant or conceited, and helped her classmates with their schoolwork whenever she could.<br><br><br>
+Hermione demonstrated her bravery many times when facing danger, though she initially showed a tendency toward mild panic in the sudden situations[21] She was extremely loyal to her friends, risking her life frequently to help them and standing by Harry even when no one else did. She also gave them advice rather often, such as in trying to make Harry understand Cho Chang's behaviour on their date,[22] and in helping Ginny deal with her crush on Harry;[25] this once prompted Ron to advise her to write a book to translate all the "mad things" girls do so that boys could understand them.[22] Hermione was quite blunt with her opinions, sometimes to the point of being tactless; for example, her attempt to comfort Lavender Brown about the death of her rabbit did not go over well,[15] and her honesty when dealing with centaurs in 1996 nearly landed her and Harry in serious trouble.[22] Despite this, Hermione was generally sensitive to others' emotions, and would lie when she had to, though she was not a skilled liar.<br><br><Br>
+Hermione also tended to be rather argumentative, a trait most evident in her interactions with Ron. Although she was generally not as short-tempered as her friends, she displayed a formidable one on several occasions, such as slapping Draco Malfoy in defence of Hagrid,[15] sabotaging Cormac McLaggen's tryout as a Keeper for the Gryffindor Quidditch team after he insulted Ron and Ginny, conjuring a flock of canaries to attack Ron in their sixth year[25] and physically attacking Ron when he briefly abandoned her and Harry during their hunt for Horcruxes.<br><br><br>
+
+</div>
+</body></html>
