@@ -1,0 +1,105 @@
+<html>
+<head>
+<link rel=stylesheet href=NavigationBar.css>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 70%;
+    height: 670px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+<script src="Scripting.js"></script>
+</head>
+<body face=sans-serif>
+
+<div>
+<ul>
+  <li><a href="HomePage.html">Home</a></li>
+  <li><a target=Display href="book.html">Books</a></li>
+  <li class=active><a target=Display href="film.html">Films</a></li>
+  <li><a target=Display href="magic.html">Magic</a></li>
+  <li><a target=Display href="char1.html">Characters</a></li>
+  <li style="float:right"><a target=Display onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li>
+  <li style="float:right"><a target=Display href="signup.html">Sign Up</a></li>
+  <li style="float:right"><a target=Display href="sorting.html">Sorting Hat</a></li>
+</ul>
+</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method=post action="http://localhost/Website/php3.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+<br><br>
+    <div class="container">
+      <label><b>User Name</b></label>
+      <input type="text" class="sign" placeholder="Enter Username" name="usern" required>
+
+      <label><b>Password</b></label>
+      <input type="password" class="sign" placeholder="Enter Password" name="psw" required>
+        
+      <center><input type="submit" value="Login" name="login" style="background-color: #4CAF50;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 35%;align: center; font-size:16px;"></center>
+	  <br>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<div style="padding:20px;margin-top:30px;background-color:#1C2833;height:1500px;">
+
+<h1><font face=serif size=8>Tom Felton</font></h1>
+<hr align="left" noshade color=DarkTurquoise width="100%" size="1">
+<br>
+
+	<div class="row">
+		<div class="column">
+			<font face=serif SIZE=6 style="letter-spacing:1px">ABOUT</font><br>
+			Actor who won MTV Movie Awards for Best Villain in 2010 and 2011 for his portrayal of Draco Malfoy in the Harry Potter films. In his film career, he has played roles in Full Circle, Murder in the First, and Second Sight.<br><br>
+			<font face=serif SIZE=6 style="letter-spacing:1px">TRIVIA</font><br>
+			In 2011, he played a role in Rise of the Planet of the Apes.<BR><BR>
+			<font face=serif SIZE=6 style="letter-spacing:1px">FAMILY LIFE</font><br>
+			His parents, Sharon and Peter, raised him alongside his three younger brothers. He dated actress Phoebe Tonkin from 2006 to 2008. He has also dated Jade Olivia aka Jade Gordon.<BR><BR>
+			<font face=serif SIZE=6 style="letter-spacing:1px">MOVIES</font><br>
+			Harry Potter(Series), The Flash, Rise Of The Planet Of Apes, The Borrowers, Megan Leavey, Anna And The King, A United Kingdom, Risen, From The Rough, The Apparition, In Secret, Murder In The First, Belle, Against The Sun, 13Hrs, Stratton, Message From The King, Sheep And Wolves, The Disappeared, White Other, Second Sight: Hide And Seek, How I Didn't Become A Piano Player, Feed, Labyrinth, Erasure, Ophelia, Home Farm Twins, Evac.<br><br>
+		</div>
+		<div class="column">
+			<div class="card">
+				<img src="Film16.jpg" style="width:100%">
+				<div class="container" style="background-color:DarkTurquoise; color: white;">
+				<h4>Tom Felton</h4>
+				<p><b>Gender: </b>Male</p>
+				<p><b>Birthday: </b>September 22, 1987</p>
+				<p><b>Height: </b>5' 9"</p>
+				<p><b>Hair Colour: </b>Dark Blond</p>
+				<p><b>Eye colour: </b>Blue</p>
+				<p><b>Family: </b>Peter Felton, Sharon Felton, Ashley Felton,, Chris Felton, Jonathan Felton</p>
+				<p><b>Birth Sign: </b>Virgo</p>
+				<p><b>Birth-Place:</b>Epsom, England</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<a href="https://www.instagram.com/t22felton/" target="_blank"><img src="film9.png" style="height:50px; position:absolute; top:940px; left:40px;"></a>
+<a href="https://twitter.com/tomfelton" target="_blank"><img src="logo4.jpg" style="height:50px; position:absolute; top:1000px; left:40px; border-radius:50%;"></a>
+<br>
+</div>
+</body>
+</html> 
