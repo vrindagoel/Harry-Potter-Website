@@ -16,6 +16,16 @@ BOOKS:
 
 FILMS:
 
+![image](https://user-images.githubusercontent.com/61345873/120890241-ed733100-c61e-11eb-927f-81f878d0bc1f.png)
+
+incorporated a video:
+![image](https://user-images.githubusercontent.com/61345873/120890261-11cf0d80-c61f-11eb-8578-3171efffc6e5.png)
+
+You may check out your favourite movie out of the series:
+![image](https://user-images.githubusercontent.com/61345873/120890343-bb160380-c61f-11eb-886d-69711de5c7e0.png)
+
+or your favourite movie character:
+
 
 MAGIC:
 
