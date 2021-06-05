@@ -25,14 +25,13 @@ You may check out your favourite movie out of the series:
 ![image](https://user-images.githubusercontent.com/61345873/120890343-bb160380-c61f-11eb-886d-69711de5c7e0.png)
 
 or your favourite movie character:
-
-
-MAGIC:
-
-
+![image](https://user-images.githubusercontent.com/61345873/120890585-5f4c7a00-c621-11eb-8925-225cfffbf0db.png)
 
 SORTING HAT:
+![image](https://user-images.githubusercontent.com/61345873/120890629-b0f50480-c621-11eb-858b-405fff5c29b2.png)
 
+get yourself sorted:
+![image](https://user-images.githubusercontent.com/61345873/120890648-cf5b0000-c621-11eb-8f48-e3f0525ca5d7.png)
 
 SIGN UP AND LOG IN:
 ![image](https://user-images.githubusercontent.com/61345873/119463827-c33c8c00-bd5f-11eb-99c3-269f76b47643.png)
