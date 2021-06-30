@@ -1,0 +1,114 @@
+<html>
+<head>
+
+<link rel=stylesheet href=NavigationBar.css>
+
+<style>
+.selected {
+    width: 40%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+body {font-family: Arial;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password], select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.holder {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+</style>
+<script src="Scripting.js"></script>
+</head>
+<body face=sans-serif leftmargin=100px topmargin=50px rightmargin=100px>
+<form name="form1">
+  <div class="holder">
+    <h1>Confirm Order</h1>
+	<hr>
+    <p>Please fill in this form.</p>
+	<br><br>
+	<font size=5>Name:  </font> <input type=text id="na" style="width:80%; border-radius:10px" required><br>
+	<font size=5>Address:  </font><br>
+	<input type=text id="ad1" style="width:30%; border-radius:10px" placeholder="House No. / Flat No. , Apartments/ Block"><br>
+	<input type=text id="ad2" style="width:30%; border-radius:10px" placeholder="Sector" required><br>
+	<input type=text id="ad3" style="width:30%; border-radius:10px" placeholder="City" required><br>
+	<input type=text id="ad5" style="width:30%; border-radius:10px" placeholder="State" required><br>
+	<input type=text id="ad4" style="width:30%; border-radius:10px" placeholder="PIN" required><br>
+	<font size=5>Payment Method:  </font><br>
+	<font size=4>
+	<input type=radio name=r1 id="radio1"> Credit Card<br>
+	<input type=radio name=r1 id="radio2"> Debit Card<br>
+	<input type=radio name=r1 id="radio3"> Net Banking<br>
+	<input type=radio name=r1 id="radio4"> Cash On Delivery<br>
+	<br><br></font>
+	<div class="clearfix">
+      <button onClick="final()" style="background-color: green; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: 100%; opacity: 0.9;border-radius: 50px; font-size:20px;">Confirm Order</button>
+      <input type=reset style="background-color: red; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: 100%; opacity: 0.9;border-radius: 50px; font-size:20px;">
+    </div>
+  </div>
+</form>
+<script language=javascript>
+function final(){
+	var a=document.getElementById("na").value;
+	var b=document.getElementById("ad1").value;
+	var c=document.getElementById("ad2").value;
+	var d=document.getElementById("ad3").value;
+	var e=document.getElementById("ad4").value;
+	
+	if(document.form1.r1[0].checked)
+	alert("M/s " + a + ", your order will arrive at your address: " + b + ", " + c + ", " + d + ", " + e + " as soon as possible. Your payment is through Credit Card. Thank You for shopping with us."); 
+	else if(document.form1.r1[1].checked)
+	alert("M/s " + a + ", your order will arrive at your address: " + b + ", " + c + ", " + d + ", " + e + " as soon as possible. Your payment is through Debit Card. Thank You for shopping with us.");
+	else if(document.form1.r1[2].checked)
+	alert("M/s " + a + ", your order will arrive at your address: " + b + ", " + c + ", " + d + ", " + e + " as soon as possible. Your payment is through Net Banking. Thank You for shopping with us.");
+	else if(document.form1.r1[3].checked)
+	alert("M/s " + a + ", your order will arrive at your address: " + b + ", " + c + ", " + d + ", " + e + " as soon as possible. Your payment method is Cash On Delivery. Thank You for shopping with us.")	;
+	else
+	alert("You haven't selected your payment method");
+}
+</script>
+</body>
+</html>

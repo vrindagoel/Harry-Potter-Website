@@ -1,0 +1,112 @@
+<html>
+<head>
+<link rel=stylesheet href=NavigationBar.css>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 70%;
+    height: 400px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+<script src="Scripting.js"></script>
+</head>
+<body face=sans-serif>
+
+<div>
+<ul>
+  <li><a href="HomePage.html">Home</a></li>
+  <li><a target=Display href="book.html">Books</a></li>
+  <li><a target=Display href="film.html">Films</a></li>
+  <li><a target=Display href="magic.html">Magic</a></li>
+  <li><a target=Display href="theory.html">Theories</a></li>
+  <li class=active><a target=Display href="char1.html">Characters</a></li>
+  <li style="float:right"><a target=Display onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li>
+  <li style="float:right"><a target=Display href="signup.html">Sign Up</a></li>
+  <li style="float:right"><a target=Display href="sorting.html">Sorting Hat</a></li>
+</ul>
+</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method=post action="http://localhost/Website/php3.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+<br><br>
+    <div class="container">
+      <label><b>User Name</b></label>
+      <input type="text" class="sign" placeholder="Enter Username" name="usern" required>
+
+      <label><b>Password</b></label>
+      <input type="password" class="sign" placeholder="Enter Password" name="psw" required>
+        
+      <center><input type="submit" value="Login" name="login" style="background-color: #4CAF50;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 35%;align: center; font-size:16px;"></center>
+	  <br>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<div style="padding:20px;margin-top:30px;background-color:#1C2833;height:1500px;">
+
+<h1><font face=serif size=8 >Voldemort</font></h1>
+<hr align="left" noshade color=DarkTurquoise width="100%" size="1">
+<br>
+
+	<div class="row">
+		<div class="column">
+			<p style="margin-left: 50px; margin-right:50px; color:grey">"I, in whose veins runs the blood of Salazar Slytherin himself, through my mother’s side? I, keep the name of a foul, common Muggle, who abandoned me even before I was born, just because he found out his wife was a witch? No, Harry. I fashioned myself a new name, a name I knew wizards everywhere would one day fear to speak, when I had become the greatest sorcerer in the world!"<br>—Lord Voldemort</p>
+			Tom Marvolo Riddle (31 December, 1926[11] – 2 May, 1998), later (and better) known as Lord Voldemort, was a half-blood wizard considered to have been the most powerful and dangerous dark wizard of all time.[12] The only child and son of wealthy Muggle gentleman Tom and Merope Riddle (née Gaunt) via the coercive use of a Love Potion, Riddle was raised in the Muggle-run Wool's Orphanage after his father abandoned his new family on the streets of London when the potion's influence was lifted, and his mother died moments after giving birth to and naming him after his father and maternal grandfather, Marvolo Gaunt.<br><br>
+			Riddle began attending Hogwarts School of Witchcraft and Wizardry in 1938 and was sorted into Slytherin house. His accomplishments included the opening of Salazar Slytherin's Chamber of Secrets and the use of its monster to attack Muggle-born students; several months' service as a purchasing agent for the Dark artefacts shop Borgin and Burkes; the ability to speak Parseltongue; and the attainment of immortality between the years of 1942 and 1998, a process begun upon the creation of his first Horcrux at the age of 16. Splitting his own spirit into a total of eight fragments, Lord Voldemort created seven Horcruxes; one unintentionally and without his knowledge - Harry Potter. Abandoning his 'Muggle' name, he became the self-proclaimed Lord Voldemort, which was an anagram of his birth name. He commanded a veritable army of wizards and Dark creatures, committed numerous murders personally and through his followers, and on one occasion nearly succeeded and on a later occasion did succeed in taking over the Ministry of Magic by installing a puppet Minister. <br><br>
+			Voldemort was ripped from his body in 1981, after attempting to kill Harry Potter, and though unable to die, was not able to regain a permanent and physical body until 1995, thus spending the intervening 14 years "a shell, less than the meanest ghost", but alive. He was finally killed by his own backfiring curse after Albus Dumbledore and Harry Potter, following Dumbledore's death, succeeded in destroying all of his Horcruxes. <br><br>
+			Tom Riddle's broken and mutilated soul was then trapped in Limbo for eternity, unable to move on to the afterlife or even return as a disembodied spirit. Unknown to most however, Lord Voldemort's legacy and blood would live on through his daughter Delphini, whom he conceived with his loyal follower Bellatrix Lestrange. Delphini was conceived sometime after the Battle of the Department of Mysteries in 1996 and before Voldemort's death at the hands of Harry Potter in 1998.<br><br>
+		</div>
+		<div class="column">
+			<div class="card">
+				<img src="char1n.jpg" alt="Harry Potter" style="width:100%">
+				<div class="container" style="background-color:green; color: white;">
+				<h4>Tom Marvolo Riddle</h4>
+				<p><b>Gender: </b>Male</p>
+				<p><b>Eye colour: </b>Red</p>
+				<p><b>Played By: </b>Ralph Fiennes</p>
+				<p><b>House: </b><a href="House3.html" style="text-decoration:none"><font color=white>slytherin</font></a></p>
+				<p><b>Patronus: </b>None</p>
+				<p><b>Blood-Status: </b>Half-Blood</p>
+				<p><b>Wand: </b>13<sup>1/2</sup>", Phoenix Feather Core</p>
+				<p><b>Boggart: </b>His Own Corpse</p>
+				<p><b>Title(s): </b>Prefect, Head Boy, Dark Lord, Heir Of Slytherin</p>
+				<p><b>Occupation: </b>Assistant at Borgin and Burkes</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<br>
+
+<h2><font face=serif>Physical Appearance</font></h2>
+<hr align="left" noshade color=DarkTurquoise width="100%" height=1px>
+<br><br>
+<p style="margin-left: 50px; margin-right:50px; color:grey">"The thin man stepped out of the cauldron, staring at Harry...and Harry stared back into the face that had haunted his nightmares for three years. Whiter than a skull, with wide, livid scarlet eyes and a nose that was flat as a snake's but with slits for nostrils...."<br>—Description of Voldemort after his rebirth</p>
+During his childhood and early adulthood, Tom Marvolo Riddle was tall and handsome, with pale skin, jet black hair, and dark eyes. When Harry saw him in the a memory in the Pensieve, he saw that there was no trace of the Gaunt family in his face, and that he was his father in miniature: "tall for eleven years old, dark-haired and pale".[16][17] Riddle's good looks continued to increase as he grew older, and he cunningly used them to charm many of the teachers at Hogwarts. While in Wool's Orphanage, he wore the standard grey tunic as with all the other children, and switched over to the Hogwarts uniform when he attended the school, gaining the Prefect and Head Boy badges when he attained those positions. When he worked in Borgin and Burkes, he wore a simple black suit.<br><br>
+However, as he became more involved in the Dark Arts, his good looks gradually left him. His features became increasingly waxy and reptilian, his skin became bone-white, and the sclera of his eyes took on a perpetually blood-shot appearance.[16] After he regained his body, his features became even more warped. In his final body, Voldemort was described as having pale white skin, a skeletally thin body, and dark scarlet eyes with cat-like slits for pupils. He had a chalk-white face that resembled a skull, snake-like slits for nostrils, and long, thin hands with unnaturally long fingers like spider's legs.<br><br>
+It is also mentioned that Voldemort had no hair or lips.[20] He had long, sharp, pale blue fingernails,[25] and took to wearing a black hooded cloak and several sets of elegant black robes. Voldemort had a high, cold voice which was sometimes described as being sibilant. The transformation into this monstrous state is believed to have been the result of creating his Horcruxes, becoming less human as he continued to divide his soul. Dumbledore also speculates that Voldemort may have gained his hideous appearance by undergoing dangerous magical transformations.<br><br>
+
+</div>
+</body>
+</html>

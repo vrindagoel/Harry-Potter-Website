@@ -1,0 +1,105 @@
+<html>
+<head>
+<link rel=stylesheet href=NavigationBar.css>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 70%;
+    height: 670px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+<script src="Scripting.js"></script>
+</head>
+<body face=sans-serif>
+
+<div>
+<ul>
+  <li><a href="HomePage.html">Home</a></li>
+  <li><a target=Display href="book.html">Books</a></li>
+  <li class=active><a target=Display href="film.html">Films</a></li>
+  <li><a target=Display href="magic.html">Magic</a></li>
+  <li><a target=Display href="char1.html">Characters</a></li>
+  <li style="float:right"><a target=Display onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li>
+  <li style="float:right"><a target=Display href="signup.html">Sign Up</a></li>
+  <li style="float:right"><a target=Display href="sorting.html">Sorting Hat</a></li>
+</ul>
+</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method=post action="http://localhost/Website/php3.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+<br><br>
+    <div class="container">
+      <label><b>User Name</b></label>
+      <input type="text" class="sign" placeholder="Enter Username" name="usern" required>
+
+      <label><b>Password</b></label>
+      <input type="password" class="sign" placeholder="Enter Password" name="psw" required>
+        
+      <center><input type="submit" value="Login" name="login" style="background-color: #4CAF50;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 35%;align: center; font-size:16px;"></center>
+	  <br>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<div style="padding:20px;margin-top:30px;background-color:#1C2833;height:1500px;">
+
+<h1><font face=serif size=8>Daniel Radcliffe</font></h1>
+<hr align="left" noshade color=DarkTurquoise width="100%" size="1">
+<br>
+
+	<div class="row">
+		<div class="column">
+			<font face=serif SIZE=6 style="letter-spacing:1px">ABOUT</font><br>
+			Actor best known for playing the wizard-in-training Harry Potter in the landmark Harry Potter film franchise. The role earned him numerous awards including multiple Teen Choice Awards and MTV Movie Awards as well as a National Movie Award for Best Male Performance in 2007.<br><br>
+			<font face=serif SIZE=6 style="letter-spacing:1px">TRIVIA</font><br>
+			After the final installment of Harry Potter, he played leading roles in the films The Woman in Black (2012), Kill Your Darlings (2013) and Horns (2014). He also earned recognition for his performance in the stage production How to Succeed in Business Without Really Trying. <BR><BR>
+			<font face=serif SIZE=6 style="letter-spacing:1px">FAMILY LIFE</font><br>
+			His parents are literary agent Alan George Radcliffe and casting agent Marcia Jeannine Gresham. He dated actress Laura O'Toole, whom he met while acting in the stage production Equus, from 2007 to 2008. He began dating actress Erin Darke in 2012.<BR><BR>
+			<font face=serif SIZE=6 style="letter-spacing:1px">MOVIES</font><br>
+			Harry Potter(Series), Swiss Army Man, Kill Your Darlings, The Woman In Black, Horns, Now You See Me 2, Imperium, Viktor Frankenstein, December Boys, Jungle, The Tailor Of Panama, Trainwreck, My Boy Jack, Beast Of Burden.<br><br>
+		</div>
+		<div class="column">
+			<div class="card">
+				<img src="Film9.jpg" style="width:100%">
+				<div class="container" style="background-color:DarkTurquoise; color: white;">
+				<h4>Daniel Radcliffe</h4>
+				<p><b>Gender: </b>Male</p>
+				<p><b>Birthday: </b>July 23, 1989</p>
+				<p><b>Height: </b>5' 4.5"</p>
+				<p><b>Hair Colour: </b>Dark Brown</p>
+				<p><b>Eye colour: </b>Blue</p>
+				<p><b>Family: </b>Alan Radcliffe, Marcia Gresham</p>
+				<p><b>Birth Sign: </b>Leo</p>
+				<p><b>Birth-Place:</b>London, England</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<a href="https://plus.google.com/+DanielRadcliffe" target="_blank"><img src="logo2.jpg" style="height:50px; position:absolute; top:940px; left:40px; border-radius:50%;"></a>
+<a href="https://www.instagram.com/daniel9340/?hl=en" target="_blank"><img src="film9.png" style="height:50px; position:absolute; top:1000px; left:40px;"></a>
+<br>
+</div>
+</body>
+</html> 

@@ -1,0 +1,53 @@
+List of names of pages
+
+1. Sign Up : signup.html
+2. Home Page : HomePage.html
+3. Books : book.html
+4. Films : film.html
+5. Magic : magic.html
+6. Theories : theory.html
+7. Merchandise : merch.html
+8. Sorting Hat : sort.html
+9. Log In : login.html
+10. Harry Potter : charHarry.html
+11. Hermione Granger: charHermione.html
+12. Ron Weasley : charRon.html
+13. Voldemort : charVoldemort.html
+14. Severus Snape : charSnape
+15. Draco Malfoy : charDraco
+16. Students :char1.html
+17. Teachers : char2.html
+18. Order Of The Phoenix : char3.html
+19. Ministry Of Magic : char4.html
+20. Death Eaters : char5.html
+21. Ghosts : char6.html
+22. Muggles : char7.html
+23. Others : char8.html
+24. Book[Sorcerer's Stone] : book1.html
+25. Book[Chamber Of Secrets] : book2.html
+26. Book[Azkaban] : book3.html
+27. Book[Goblet] : book4.html
+28. Book[Phoenix] : book5.html
+29. Book[Half Blood Prince] : book6.html
+30. Book[Deathly Hallow1] : book7.html
+31. Book[Deathly Hallows2] : book8.html
+32. Film[Philosopher] : film1.html
+33. Film[Chamber] : film2.html
+34. Film[Azkaban] : film3.html
+35. Film[Goblet] : film4.html
+36. Film[Phoenix] : film5.html
+37. Film[Half Blood] : film6.html
+38. Film[Deathly1] : film7.html
+39. Film[Deathly2] : film8.html
+40. Daniel Radcliffe :Daniel.html
+41. Emma Watson : Emma.html
+42. Rupert Grint : Rupert.html
+43. Bonnie Wright : Bonnie.html
+44. Alan Rickman : Alan.html
+45. Robbie Coltrane : Robbie.html
+46. Matthew Lewis : Matthew.html
+47. Tom Felton : Tom.html
+48. Robert Pattinson : Robert.html
+49. Evanna Lynch : Evanna.html
+50. Maggie Smith : Maggie.html
+51. Gary Oldman : Gary.html

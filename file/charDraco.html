@@ -1,0 +1,134 @@
+<html>
+<head>
+<link rel=stylesheet href=NavigationBar.css>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 70%;
+    height: 440px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+<script src="Scripting.js"></script>
+</head>
+<body face=sans-serif>
+
+<div>
+<ul>
+  <li><a href="HomePage.html">Home</a></li>
+  <li><a target=Display href="book.html">Books</a></li>
+  <li><a target=Display href="film.html">Films</a></li>
+  <li><a target=Display href="magic.html">Magic</a></li>
+  <li class=active><a target=Display href="char1.html">Characters</a></li>
+  <li style="float:right"><a target=Display onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li>
+  <li style="float:right"><a target=Display href="signup.html">Sign Up</a></li>
+  <li style="float:right"><a target=Display href="sorting.html">Sorting Hat</a></li>
+  <li style="float:right"><a target=Display href="merch.html">Merchandise</a></li>
+</ul>
+</div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method=post action="http://localhost/Website/php3.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+<br><br>
+    <div class="container">
+      <label><b>User Name</b></label>
+      <input type="text" class="sign" placeholder="Enter Username" name="usern" required>
+
+      <label><b>Password</b></label>
+      <input type="password" class="sign" placeholder="Enter Password" name="psw" required>
+        
+      <center><input type="submit" value="Login" name="login" style="background-color: #4CAF50;color: white;padding: 14px 20px;margin: 8px 0;border: none;cursor: pointer;width: 35%;align: center; font-size:16px;"></center>
+	  <br>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<div style="padding:20px;margin-top:30px;background-color:#1C2833;height:1500px;">
+
+<h1><font face=serif size=8 >Draco Malfoy</font></h1>
+<hr align="left" noshade color=DarkTurquoise width="100%" size="1">
+<br>
+
+	<div class="row">
+		<div class="column">
+			<p style="margin-left: 50px; margin-right:50px; color:grey">"I really don't think they should let the other sort in, do you? They're just not the same, they've never been brought up to know our ways. Some of them have never even heard of Hogwarts until they get the letter, I imagine. I think they should keep it in the old wizarding families." <br>&mdash;Draco to Harry Potter before their first year at Hogwarts</p>
+			Draco Lucius Malfoy (b. 5 June, 1980) was a pure-blood wizard and the only son of Lucius and Narcissa Malfoy (née Black). The son of a Death Eater, Draco was raised to believe strongly in the importance of blood purity. He attended Hogwarts School of Witchcraft and Wizardry from 1991-1998 and was sorted into Slytherin House. During his years at Hogwarts, he became friends with Vincent Crabbe, Gregory Goyle, Pansy Parkinson, and other fellow Slytherins, but he quickly developed a rivalry with Harry Potter. <br><br><br>
+			He was made a prefect of his house and was a member of the Inquisitorial Squad during his fifth year, at the end of which his father was imprisoned in Azkaban following the Battle of the Department of Mysteries. Lord Voldemort charged Draco with making up for Lucius's failure, and he became a Death Eater at age sixteen, but was quickly disillusioned with the lifestyle. Draco was unable to complete his task — murdering Albus Dumbledore, which was taken over by Severus Snape — and only performed his other duties fearfully and reluctantly. He and his family defected hours before the end of the Second Wizarding War fearing for their lives. <br><br><br>
+			By 2017, Draco had married Astoria Greengrass and had one child, Scorpius Hyperion Malfoy.<br><br><br>
+ </div>
+		<div class="column">
+			<div class="card">
+				<img src="char1c.jpg" alt="Draco Malfoy" style="width:100%">
+				<div class="container" style="background-color:green; color: white;">
+				<h4>Draco Malfoy</h4>
+				<p><b>Gender: </b>Male</p>
+				<p><b>Hair Colour: </b>White-blond</p>
+				<p><b>Eye colour: </b>Grey</p>
+				<p><b>Family: </b>Lucius Malfoy(father), Narcissa Malfoy(mother)</p>
+				<p><b>Spouse: </b>Astoria Malfoy</p>
+				<p><b>House: </b><a href="House3.html" style="text-decoration:none"><font color=white>Slytherin</font></a></p>
+				<p><b>Patronus: </b>None</p>
+				<p><b>Blood-Status: </b>Pure-Blood</p>
+				<p><b>Wand: </b>10", Hawthorn, unicorn hair (formerly),18", Elm, dragon heartstring (presumably),15", Elder, Thestral tail hair (held allegiance from 97-98, never wielded) </p>
+				<p><b>Title(s): </b>Prefect, Seeker</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<br>
+
+<h2><font face=serif>Personality And Traits</font></h2>
+<hr align="left" noshade color=DarkTurquoise width="100%" height=1px>
+<br>
+<p style="margin-left: 50px; margin-right:50px; color:grey">"You've picked the losing side, Potter! I warned you! I told you you ought to choose your company more carefully, remember? When we met on the train, first day at Hogwarts? I told you not to hang around with riff-raff like this! Too late now, Potter! They’ll be the first to go, now the Dark Lord's back! Mudbloods and Muggle-lovers first! Well — second — Diggory was the first —" <br>&mdash;—Draco taunting Harry Potter after Voldemort's return and the murder of Cedric Diggory</p>
+<p align=justify>
+Draco was, in general, an arrogant, spiteful bully. Like Dudley Dursley, his narcissistic nature most likely stemmed from his being spoiled by his parents throughout his childhood, though according to Harry himself, Draco is even less sympathetic than his cousin. He believed himself superior to most people because of his family's pure-blood lineage as well as great wealth and social standing. He frequently behaved cruelly to Muggle-borns, so-called blood traitors, Gryffindor students, and anyone who was a supporter of Harry Potter or Albus Dumbledore. For much of his youth, Draco took after his bigoted father, Lucius Malfoy, as a role model, and frequently boasted about his family's influence and wealth. <br><br><br>
+However, something began to change in Draco's psyche in his sixth year at Hogwarts. After Lord Voldemort made him a Death Eater, he gave Draco the task of assassinating Albus Dumbledore by the end of the year, something that Draco was very eager to do at first. After a number of feeble attempts, Draco began to crack under the enormous pressure that Voldemort was putting on him. He was uncertain of his ability to fulfil the mission and was terrified that he and his family would pay the price for his failure; the stress led him to be reckless as his two feeble attempts were noted to be foolish by Snape, and he attempted a Cruciatus Curse on Harry, despite the consequences of a life sentence in Azkaban. <br><br><br>
+Over the course of the year, the mission also led Draco to neglect other aspects of his school life that he would previously have abused or enjoyed: he rejected his Prefect duties that he once would happily abuse; he feigned illness and paid another student to take over his stead in order to avoid playing Quidditch himself, as opposed to three years earlier when he would ensure the entire match was postponed by exaggerating a minor injury in order to suit the team's interest; he missed two Transfiguration homework assignments; he would distance himself from his friends Crabbe and Goyle and order them to be on lookout without telling them anything; and he would also spend less time mocking Harry and his friends despite the many opportunities. Ultimately, Draco was unable to kill Dumbledore, lowering his wand and being tempted to take Dumbledore's offer of protection for his parents. Also, during the Battle of Hogwarts, he showed genuine concern for Crabbe and Goyle, something he rarely did. <br><br><br>
+Draco was quite intelligent and quick-witted, capable of deducing things and coming up with clever plans based on a small amount of information; his father had expected him to obtain top marks in school after his first year, and showed disappointment that Hermione beat him. He figured out through Montague's experience that the Vanishing Cabinets in Hogwarts and Borgin and Burkes were linked and that he could use that passage to his advantage. However, his plans could have limitations based on his own arrogance when dealing with people; when he attempted to sabotage Harry during the Gryffindor-Ravenclaw Quidditch match in their third year, his whole plan was based solely around the idea that the Dementors' appearance scared Harry, ignorant of the fact that it was the effect the Dementors had on him that caused Harry problems. Draco was also adept at compartmentalising his emotions, as is evidenced in his success with Occlumency. <br><br><br>
+For the rest of the Second Wizarding War, Draco became disillusioned by the Death Eater lifestyle. He reluctantly participated in Death Eater activities and by the end of the war, remained on the fence. When Harry Potter was captured in his home, Draco showed great hesitation in identifying him before the Death Eaters. <br><br><br>
+It is implied that, as an adult, Draco regretted joining the Death Eaters and lost some of his bigotry, as he has a civil, if not friendly, relationship with old school rivals and evidently raised his son Scorpius to be a better person than he was. He later admitted to Harry that he never truly craved power like his father and that his ambition was actually to become a star Quidditch player, but he wasn't good enough, and mainly he just wanted to be happy. He also envied Harry's friendships, as he only ever had Crabbe and Goyle. <br><br><br>
+Draco was a very loving and devoted husband to Astoria, having told her that he didn't care if he ended the Malfoy bloodline in order to protect her from her family's curse which made childbirth dangerous and detrimental to her health. Draco was also rather wise in his later years, having never given in to his desire to use his family's secret Time Turner to see his wife for one more minute, having far too much respect for her desires and her memory to risk jeopardising the timeline for his beloved Astoria. This shows just how deeply Draco was capable of loving someone, to the point where even when the power was within his grasp to alter time to be with them, that he could resist such overwhelming temptation. This showed and immense change in his character by the age of forty. <br><br><br>
+</p>
+<h2><font face=serif>Magical Abilities And Skills</font></h2>
+<hr align="left" noshade color=DarkTurquoise width="100%" height=1px>
+<br>
+Draco was a talented wizard from a young age and possessed several impressive magical abilities. His wand was made of hawthorn, which one should only ever consider placing in the hands of a witch or wizard of proven talent. <br><br><br>
+<ol>
+<li><b>Occlumency:</b> In his sixth year, his Aunt Bellatrix taught him Occlumency to prepare him for his mission. As Draco had already shut down his compassion to become the bully he was, it was much easier for him to close his mind and disassociate from his emotions. He had enough skill in Occulumency that he was able to block out Snape's attempts to read his mind. <br><br><br>
+<li><b>Potions:</b> Draco was proficient in this area of magic. This could be because Snape favoured Draco and might have given him extra help in his class. Draco was able to pass his O.W.L. examination in the subject with a mark of at least 'Exceeds Expectations' and most likely 'Outstanding', since he was apparently not lacking a book or ingredients in Professor Slughorn's first class. When Professor Slughorn was teaching the subject, Draco seemed to have lost his edge. He was covered in "something like cat sick" during a mixed antidote composition, and producing a "merely passable" Hiccoughing Solution.<br><br><br> 
+<li><b>Defence Against the Dark Arts:</b> Draco advanced to the N.E.W.T.-level class, so he achieved a high score on his O.W.L. exam. He showed the ability to proficiently defend himself against Dark magic. <br><br><br>
+<li><b>Non-verbal magic:</b> Draco mastered non-verbal spells before his sixth year, which included blocking jinxes non-verbally. This takes a lot of skill and concentration to do and only a few in his year have done it. <br><br><br>
+<li><b>Quidditch:</b> He was quite a fine Quidditch player. He started flying at a younger age showing his skills in his first year. He made the team as a seeker in his second year, which was a very difficult position to acquire. Although his entrance into the team is enhanced due to his father bribing the team with the new Nimbus 2001 broomsticks, he also had sufficient talent, although Harry still surpassed him in pure skill despite Draco's alleged experience and superior broomstick in their first game against each other. When Draco refused to play during his sixth year, his team suffered greatly due to the fact that his replacement did a poorer job, suggesting that no Slytherin during his time was more skilful than him. <br><br><br>
+<li><b>Duelling:</b> Draco had been a very competent duellist for quite a while, a skill probably inherited from his parents. He was able to cast the Leg-Locker Curse in his first year, something Rubeus Hagrid said no first year would be able to do. The very next year, he could cast such a powerful hex that it threw his opponent across the room. By his sixth year, Draco could perform multiple jinxes nonverbally, something most sixth years could not do whatsoever, whilst duelling Harry Potter. However when Draco duelled Harry Potter in their sixth year, Harry nearly killed him. He was also beaten by Ginny Weasley in his fifth year and by Hermione Granger in his seventh. At the age of fourty, Draco appears to have greatly improved his duelling skills as he proved quite capable of defending himself against Harry when they duelled in the Potter's house. He was able to fight him to a draw, managing to avoid being hit by Harry's spells; a remarkable feat as Harry was at that time the Head of the Department of Magical Law Enforcement.<br><br><br> 
+<li><b>Transfiguration:</b> Draco attended N.E.W.T.-level Transfiguration, meaning he achieved a high mark on his O.W.L. exam. In his second year with some simple advice from Snape, he was able to conjure a snake, which an advanced form of transfiguration learned in the sixth year and above (though in all fairness, this conjuration was rather simpler than most others). He also helped to successfully transfigure Harry into a doppelganger of Voldemort in order to fool and ambush Delphini on October 31st, 1981. This displays a high level of skill in the area as human transfiguration on the level of complete impersonation is a very demanding feat. <br><br><br>
+<li><b>Charms:</b> Draco was talented in charms, as he could cast the Dancing Feet Spell in his second year and the Tooth-Growing Spell in his second and fourth years, respectively. By his sixth year, he was able to cast the very difficult Protean Charm, something that the only known student of the same age capable of was Hermione (albeit, he was known to have mastered it one year later than she could). <br><br><br>
+<li><b>Unforgivable Curses:</b> Draco learned how to cast at least two of the Unforgivable Curses in his sixth year, the Cruciatus Curse and the Imperius Curse. Both of these were extremely difficult Dark spells that not even many adult wizards can perform; his skilled Aunt Bellatrix might have taught him those while she was teaching him Occlumency and non-verbal spells. His Imperius Curse was strong enough to hold down Madam Rosmerta for almost an entire year, while he used the Cruciatus Curse to punish Thorfinn Rowle. It is possible he has the capability (but not the willingness) to perform the Killing Curse as well. <br><br><br>
+<li><b>Magical repair:</b> Draco managed to repair the Vanishing Cabinet in his sixth year with some assistance from Borgin, though it did take him the majority of the year. The cabinet was smashed by Peeves in his second year and Draco repaired it despite the fact that the magical link between the two cabinets might have been damaged. <br><br><br>
+<li><b>Alchemy:</b> After graduating from Hogwarts, Draco began studying Alchemy as a hobby. <br><br><br>
+<li><b>Love:</b> Although not a prominent ability for Draco, it should be noted that he was one of the only Death Eaters who was capable of feeling genuine love. He deeply cared about both his parents to the point that he would protect and defend them when necessary. His ability to love was more prominent later on in life, giving him the strength to abandon his old prejudice against non-pure bloods after seeing how much damage and devastation it caused to his family. This was evident as he raised his son away from that prejudice to be a better person than him, maintained a more civil relationship with his old school rivals. He even claimed that he would have willingly ended the Malfoy bloodline with himself if it meant protecting his wife. He also had a great deal more faith in others by this time. In the wake of his wife's death, he implicitly trusted Albus Potter to reach his son in a way he couldn't to keep Scorpius from completely isolating himself in grief and to help him get back on his feet. This shows that, despite his history with Albus's father, Draco bore him no grudge for it, even having implied to have a friendly relationship with the boy.<br><br><br>
+</ol>
+</div>
+</body>
+</html>
